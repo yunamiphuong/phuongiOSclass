@@ -131,3 +131,5 @@ print ("Nhập nhiệt độ F:")
 let f: Double = Double(readLine()!) ?? 0
 
 print (" Nhiệt độ C là: \((f - 32)/1.8)")
+
+
