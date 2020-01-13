@@ -9,4 +9,4 @@
 import Foundation
 
 
-timViTric2()
+timMinMax()

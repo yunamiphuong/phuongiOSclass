@@ -14,7 +14,7 @@ import Foundation
 
 
 func vongLapFor() {
-    for i in 0...10 {
+    for i in 5...10 {
         print (i+1)
     }
     for i in 0..<10 {
@@ -25,7 +25,7 @@ func vongLapFor() {
 
 func vongLapWhile() {
     var i = 10
-    while i > 0 {
+    while i > 8 {
         i -= 1 // đồng nghĩa với biểu thức i = i - 1
         print (i)
     }
@@ -37,5 +37,5 @@ func vongLapRepeatWhile() {
         print(i)
         i += 1
     }
-    while i < 10
+    while i < 0
 }

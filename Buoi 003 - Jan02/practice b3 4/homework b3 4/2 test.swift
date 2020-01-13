@@ -71,3 +71,63 @@ func timSoCach2(){
         }
     }
 }
+
+func testMang () {
+    var arr: [Float] = [2,4,7,88,9,0, -1]
+//    for (i, item) in arr.enumerated() {
+//    print("giá trị arr[i] là \(arr[i]), còn giá trị i là \(i)")
+//    }
+    
+    for a in arr {
+        print("a là \(a)")
+    }
+    for b in arr.reversed() {
+        print("b là \(b)")
+    }
+    for c in 0..<arr.count {
+        print("c là \(c), arr[c] là \(arr[c])")
+    }
+    for d in 0..<arr.count {
+        print("d là \(d), arr[d] là \(arr[d])")
+    }
+    for (e , f) in arr.enumerated() {
+        print("e là \(e) , f là \(f), arr[e] là \(arr[e])")
+    }
+       // bài tập: cho 1 mảng số nguyên, in ra 1 mangr mà các phần tử đã được bình phương
+    
+    for value in arr {
+        print(powf(value, 2))
+    }
+//    for index in 0..<arr.count {
+//        arr[index] = powf(arr[index], 2)
+//
+//    }
+//    print(arr)
+    
+    // bài tập: kiểm tra trong mảng nếu có phần tử âm thì thay thế bằng 0
+    for index in 0...arr.count-1 {
+        if arr[index] < 0 {
+            arr[index] = 0
+        }
+    }
+    print(arr)
+    
+
+    // bài tập tìm số nhỏ nhất và lớn nhất trong mảng số nguyên
+    var min : Float = arr[0]
+    var max : Float = arr[0]
+   
+    for index in 1..<arr.count {
+        if min > arr[index] {
+            min = arr[index]
+        }
+        if max < arr[index] {
+            max = arr[index]
+        }
+    }
+    print("min là \(min)")
+    print("max là \(max)")
+    
+    
+    
+}
