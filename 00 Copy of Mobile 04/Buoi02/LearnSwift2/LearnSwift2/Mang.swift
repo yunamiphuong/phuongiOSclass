@@ -73,7 +73,6 @@ func binhPhuongMang(){
 }
 
 // MARK: Chữa bài tập
-// tim so am thay bang 0
 
 func timSoAm(){
     var numbers = [-3, 9, 0, 24, -5, 1]

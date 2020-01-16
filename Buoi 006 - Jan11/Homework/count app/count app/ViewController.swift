@@ -37,13 +37,16 @@ class ViewController: UIViewController {
     
     // action
     @IBAction func onPressCount(_ sender: Any) {
-        self.a += 1
-        self.currentNumberLabel.text = "Số hiện tại là \(String(self.a))"
+//        self.a += 1
+//        self.currentNumberLabel.text = "Số hiện tại là \(String(self.a))"
+        a = a + 1
+        currentNumberLabel.text = "Số hiện tại là \(a)"
     }
     
     
     
     @IBAction func onPressReset(_ sender: Any) {
+        a = 0
         currentNumberLabel.text = "Số hiện tại là: 0"
     }
     

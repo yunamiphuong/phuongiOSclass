@@ -9,11 +9,11 @@
 import Foundation
 
 // khai báo một mảng số nguyên
-  
+//    var arr: [Float] = [0, 1, 2, 11, 16, -3, 48]
 
 
-func timMinMax() -> Array<Any>{
-    var arr: [Float] = [0, 1, 2, 11, 16, -3, 48]
+func timMinMax(arr: [Float]) -> Array<Any>{
+    
     var min : Float = arr[0]
     var max : Float = arr[0]
     
@@ -30,9 +30,8 @@ func timMinMax() -> Array<Any>{
     return [min, max]
 }
 
-func arrangeArr() {
-    var newArr : [Float] = []
-    timMinMax()
+func arrangeArr(arr: [Float]) -> Array<Any>{
+    timMinMax(arr: <#T##[Float]#>)
     
     for index in 0..<arr.count {
         if arr[index] == min {
@@ -41,4 +40,6 @@ func arrangeArr() {
         if arr[index] == max {
             arr.remove(at: index)
         }
+    }
+    
 }
