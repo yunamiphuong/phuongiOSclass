@@ -8,6 +8,9 @@
 
 import UIKit
 
+// chữa bài
+
+
 class ViewController: UIViewController {
     @IBOutlet weak var bigLabel: UILabel!
     
@@ -22,6 +25,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // chữa bài
+        
         
     }
     

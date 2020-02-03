@@ -36,27 +36,27 @@ class ViewController: UIViewController {
     @IBAction func onPress(_ sender: Any) {
         // lấy dữ liệu người dùng nhập vào
         // cách 1:
-//        let numberText  = textFieldNhapSoDien.text ?? ""
-//        print(numberText)
-//
-//        let priceText = textFieldNhapGiaDien.text ?? ""
-//        print(priceText)
-//
-//        let totalTienDien = (Float(numberText) ?? 0.0) * (Float(priceText) ?? 0.0)
-//        print(totalTienDien)
-//
-//        labelTong.text = """
-//        Tổng tiền điện:
-//        \(totalTienDien) VND
-//        """
-        
-        
-        // cách 2
-        guard let numberText = textFieldNhapSoDien.text, let number = Float(numberText) else {return}
-        guard let priceText = textFieldNhapGiaDien.text, let price = Float(priceText) else {return}
+        let numberText  = textFieldNhapSoDien.text ?? ""
+        print(numberText)
 
-        labelTong.text = "Tổng tiền điện: \(number * price) VND"
-    }
-    
+        let priceText = textFieldNhapGiaDien.text ?? ""
+        print(priceText)
+
+        let totalTienDien = (Float(numberText) ?? 0.0) * (Float(priceText) ?? 0.0)
+        print(totalTienDien)
+
+        labelTong.text = """
+        Tổng tiền điện:
+        \(totalTienDien) VND
+        """
+        
+        
+//        // cách 2
+//        guard let numberText = textFieldNhapSoDien.text, let number = Float(numberText) else {return}
+//        guard let priceText = textFieldNhapGiaDien.text, let price = Float(priceText) else {return}
+//
+//        labelTong.text = "Tổng tiền điện: \(number * price) VND"
+//    }
+//
 }
 

@@ -1,2 +1,0 @@
-# phuongiOSclass
-học code iOS

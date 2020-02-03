@@ -17,12 +17,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         myView.backgroundColor = UIColor.yellow
-        myView.frame = CGRect(x: 100, y: 165, width: 300, height: 67)
-        print(myView.frame)
+        myView.frame = CGRect(x: 100, y: 165, width: 100, height: 200)
+         print("myView.frame 1 là \(myView.frame)")
+        print("myView.bounds 1 là \(myView.bounds)")
         
-        myView.bounds = CGRect(x: 5, y: 8, width: 160, height: 160)
-        print(myView.frame)
-        print(myView.bounds)
+        myView.bounds = CGRect(x: 50, y: 60, width: 100, height: 200)
+        print("myView.frame 2 là \(myView.frame)")
+        print("myView.bounds 2 là \(myView.bounds)")
         // đưa tâm của myView về trung tâm màn hình superview (view)
         // view là superview của class ViewController
 //        myView.center = view.center
