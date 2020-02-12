@@ -56,7 +56,7 @@ class ViewController: UIViewController {
 //        guard let priceText = textFieldNhapGiaDien.text, let price = Float(priceText) else {return}
 //
 //        labelTong.text = "Tổng tiền điện: \(number * price) VND"
-//    }
-//
+    }
+
 }
 
