@@ -2,75 +2,60 @@
 //  WaterViewController.swift
 //  DemoTimer
 //
-//  Created by Apple on 1/18/20.
+//  Created by Taof on 1/18/20.
 //  Copyright © 2020 Taof. All rights reserved.
 //
 
 import UIKit
-import AVFoundation // thư viện của hệ thống làm việc với âm thanh
+import AVFoundation // thư viện của hệ thống, làm việc với âm thanh
 
-class WaterViewController: UIViewController {
-    
+class WaterViewController: ViewController {
+
     @IBOutlet weak var waterView: UIView!
-    
-    @IBOutlet weak var labelCount: UILabel!
+    @IBOutlet weak var countLabel: UILabel!
     
     var time: Timer!
     var count: Int = 0
-    var n: Int = 5 // 5s thì tụt hết nước trên màn hình
+    var n: Int = 0
     
-    // cách 1 tạo biến n
-    //    var n: Int = 5 //số thời gian ban đầu
-    
-    
-    //-----
-    //khai báo một biến AVAudio
+    // khai báo 1 biến kiểu
     var soundPlayer: AVAudioPlayer?
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        time = Timer.scheduledTimer(timeInterval: 1,
+                                     target: self,
+                                     selector: #selector(runLoop),
+                                     userInfo: nil,
+                                     repeats: true)
         
-        time = Timer.scheduledTimer(timeInterval: 1, // 1s
-            target: self,
-            selector: #selector(runLoop),
-            userInfo: nil,
-            repeats: true)
-        // cách 1:        labelCount.text = "\(n)" // cập nhật labelCount ban đầu là n để bắt đầu đếm ngược
-        //        count = 0
-        
-        // cách 2
+        n = 30
         count = n
-        labelCount.text = "\(count)"
+        countLabel.text = "\(count)"
         playSound()
     }
     
-    @objc func runLoop() {
-        // cách 1
-        //        count += Float(CGFloat(view.frame.maxY) / CGFloat(n))
-        //        n -= 1
-        //        waterView.frame.origin.y = CGFloat(count)
-        //        labelCount.text = "\(n)"
-        
-        // cách 2
+    @objc func runLoop(){
         count -= 1
-        labelCount.text = "\(count)"
-        waterView.frame = CGRect(x: 0, y: waterView.frame.origin.y + view.bounds.height/CGFloat(n), width: view.bounds.width, height: view.bounds.height)
+        countLabel.text = "\(count)"
+        waterView.frame = CGRect(x: 0,
+                                 y: waterView.frame.origin.y + view.bounds.height/CGFloat(n) ,
+                                 width: view.bounds.width,
+                                 height: view.bounds.height)
         
-        
-        if count < 1 {
-            // dừng thời gian bằng .invalidate()
-        
-            time.invalidate()
+        if count < 1{
             // dừng âm thanh
             soundPlayer?.pause()
+            // dừng thời gian
+            time.invalidate()
         }
     }
-    
-    func playSound() {
-        let path = Bundle.main.path(forResource: "bubblewater.mp3", ofType: nil)!
+
+    func playSound(){
+        let path = Bundle.main.path(forResource: "bubblewater.mp3", ofType:nil)!
         let url = URL(fileURLWithPath: path)
-        
+
         do {
             soundPlayer = try AVAudioPlayer(contentsOf: url)
             soundPlayer?.play()
@@ -78,9 +63,7 @@ class WaterViewController: UIViewController {
             soundPlayer?.numberOfLoops = -1
         } catch {
             print("lỗi")
-            // couldn't load file
+            // couldn't load file :(
         }
-        
     }
-    
 }

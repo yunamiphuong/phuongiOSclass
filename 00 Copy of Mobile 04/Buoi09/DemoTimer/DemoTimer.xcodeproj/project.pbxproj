@@ -7,19 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1843FE7023D2F52900E6B7B9 /* WaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843FE6F23D2F52900E6B7B9 /* WaterViewController.swift */; };
-		1843FE7223D308B900E6B7B9 /* bubblewater.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1843FE7123D308B900E6B7B9 /* bubblewater.mp3 */; };
 		A98A8EB623D2EFAD00AD5FAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98A8EB523D2EFAD00AD5FAF /* AppDelegate.swift */; };
 		A98A8EB823D2EFAD00AD5FAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98A8EB723D2EFAD00AD5FAF /* SceneDelegate.swift */; };
 		A98A8EBA23D2EFAD00AD5FAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98A8EB923D2EFAD00AD5FAF /* ViewController.swift */; };
 		A98A8EBD23D2EFAD00AD5FAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A98A8EBB23D2EFAD00AD5FAF /* Main.storyboard */; };
 		A98A8EBF23D2EFAE00AD5FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A98A8EBE23D2EFAE00AD5FAF /* Assets.xcassets */; };
 		A98A8EC223D2EFAE00AD5FAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A98A8EC023D2EFAE00AD5FAF /* LaunchScreen.storyboard */; };
+		A98A8ECA23D2F47800AD5FAF /* WaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98A8EC923D2F47800AD5FAF /* WaterViewController.swift */; };
+		A98A8ECE23D3094C00AD5FAF /* bubblewater.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A98A8ECD23D3094C00AD5FAF /* bubblewater.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1843FE6F23D2F52900E6B7B9 /* WaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterViewController.swift; sourceTree = "<group>"; };
-		1843FE7123D308B900E6B7B9 /* bubblewater.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bubblewater.mp3; sourceTree = SOURCE_ROOT; };
 		A98A8EB223D2EFAD00AD5FAF /* DemoTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A98A8EB523D2EFAD00AD5FAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A98A8EB723D2EFAD00AD5FAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +26,8 @@
 		A98A8EBE23D2EFAE00AD5FAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A98A8EC123D2EFAE00AD5FAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A98A8EC323D2EFAE00AD5FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A98A8EC923D2F47800AD5FAF /* WaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterViewController.swift; sourceTree = "<group>"; };
+		A98A8ECD23D3094C00AD5FAF /* bubblewater.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bubblewater.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +60,15 @@
 		A98A8EB423D2EFAD00AD5FAF /* DemoTimer */ = {
 			isa = PBXGroup;
 			children = (
+				A98A8ECD23D3094C00AD5FAF /* bubblewater.mp3 */,
 				A98A8EB523D2EFAD00AD5FAF /* AppDelegate.swift */,
 				A98A8EB723D2EFAD00AD5FAF /* SceneDelegate.swift */,
 				A98A8EB923D2EFAD00AD5FAF /* ViewController.swift */,
-				1843FE6F23D2F52900E6B7B9 /* WaterViewController.swift */,
 				A98A8EBB23D2EFAD00AD5FAF /* Main.storyboard */,
 				A98A8EBE23D2EFAE00AD5FAF /* Assets.xcassets */,
-				1843FE7123D308B900E6B7B9 /* bubblewater.mp3 */,
 				A98A8EC023D2EFAE00AD5FAF /* LaunchScreen.storyboard */,
 				A98A8EC323D2EFAE00AD5FAF /* Info.plist */,
+				A98A8EC923D2F47800AD5FAF /* WaterViewController.swift */,
 			);
 			path = DemoTimer;
 			sourceTree = "<group>";
@@ -131,7 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1843FE7223D308B900E6B7B9 /* bubblewater.mp3 in Resources */,
+				A98A8ECE23D3094C00AD5FAF /* bubblewater.mp3 in Resources */,
 				A98A8EC223D2EFAE00AD5FAF /* LaunchScreen.storyboard in Resources */,
 				A98A8EBF23D2EFAE00AD5FAF /* Assets.xcassets in Resources */,
 				A98A8EBD23D2EFAD00AD5FAF /* Main.storyboard in Resources */,
@@ -147,7 +147,7 @@
 			files = (
 				A98A8EBA23D2EFAD00AD5FAF /* ViewController.swift in Sources */,
 				A98A8EB623D2EFAD00AD5FAF /* AppDelegate.swift in Sources */,
-				1843FE7023D2F52900E6B7B9 /* WaterViewController.swift in Sources */,
+				A98A8ECA23D2F47800AD5FAF /* WaterViewController.swift in Sources */,
 				A98A8EB823D2EFAD00AD5FAF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
